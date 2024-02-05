@@ -1,41 +1,40 @@
 package core;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.qameta.allure.Allure;
 import io.qameta.allure.Attachment;
 import org.apache.log4j.Logger;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.rules.TestName;
+import org.junit.rules.TestWatcher;
+import org.junit.runner.Description;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
-import org.openqa.selenium.support.FindBy;
 
+import java.io.ByteArrayInputStream;
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
 
 public class BaseTest extends PageProvider {
-
-    @FindBy(xpath = "//div[@class='fc-dialog-container']//button[contains(@class,'fc-primary-button') and not(contains(@class,'fc-confirm-choices'))]//p")
-    private WebElement acceptTerms;
-    @FindBy(xpath = "//div[@class='fc-consent-root']")
-    private WebElement iframe;
-
     protected WebDriver webDriver;
     protected Logger logger = Logger.getLogger(getClass());
+
 
     @Attachment(value = "Page screenshot", type = "image/png")
     public static byte[] saveScreenshotPNG(WebDriver driver) {
         return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
     }
 
-    private void driverInit() {
+        private void driverInit() {
         ChromeOptions options = new ChromeOptions();
         Map<String, Object> prefs = new HashMap<String, Object>();
         prefs.put("profile.default_content_setting_values.notifications", 1); // Разрешить уведомления
@@ -76,11 +75,6 @@ public class BaseTest extends PageProvider {
         logger.info("Browser was opened");
         init(webDriver);
         webDriver.get(Urls.baseUrl);
-//        actions.switchToFrame("", iframe);
-        actions.waitAndClick("",acceptTerms);
-        if (webDriver instanceof JavascriptExecutor) {
-            ((JavascriptExecutor) webDriver).executeScript("document.querySelector('//div[@class='fc-dialog-container']//button[contains(@class,'fc-primary-button') and not(contains(@class,'fc-confirm-choices'))]//p').click();");
-        }
 
     }
 

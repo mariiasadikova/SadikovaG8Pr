@@ -1,13 +1,14 @@
 package pageObject;
 
 import core.Actions;
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class HomePage extends Actions {
 
-    @FindBy(xpath = "//div[contains(@class,'top-card')]//*[text()='Forms']")
+    @FindBy(xpath = "//*[text()='Forms']/ancestor::div[contains(@class,'top-card')]")
     private WebElement formsCard;
 
 
@@ -15,8 +16,14 @@ public class HomePage extends Actions {
         super(webDriver);
     }
 
-    public HomePage clickFormsCard() {
+    @Step
+    public LeftForm clickFormsCard() {
         waitAndClick("Нажать на карточку 'Forms'", formsCard);
-        return new HomePage(webDriver);
+        return new LeftForm(webDriver);
     }
+
+    public void assertUrl(){
+    }
+
+
 }

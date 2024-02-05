@@ -3,12 +3,9 @@ package core;
 import io.qameta.allure.Step;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -64,7 +61,8 @@ public class Actions {
         }
     }
 
-    protected void enterText(WebElement element, String text) {
+    @Step
+    protected void enterText(String step, WebElement element, String text) {
         webDriverWait10.until(ExpectedConditions.elementToBeClickable(element));
         try {
             element.clear();

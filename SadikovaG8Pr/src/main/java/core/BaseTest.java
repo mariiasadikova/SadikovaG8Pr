@@ -78,9 +78,9 @@ public class BaseTest extends PageProvider {
         webDriver.get(Urls.baseUrl);
 //        actions.switchToFrame("", iframe);
         actions.waitAndClick("",acceptTerms);
-//        if (webDriver instanceof JavascriptExecutor) {
-//            ((JavascriptExecutor) webDriver).executeScript("document.querySelector('//div[@class='fc-dialog-container']//button[contains(@class,'fc-primary-button') and not(contains(@class,'fc-confirm-choices'))]//p').click();");
-//        }
+        if (webDriver instanceof JavascriptExecutor) {
+            ((JavascriptExecutor) webDriver).executeScript("document.querySelector('//div[@class='fc-dialog-container']//button[contains(@class,'fc-primary-button') and not(contains(@class,'fc-confirm-choices'))]//p').click();");
+        }
 
     }
 

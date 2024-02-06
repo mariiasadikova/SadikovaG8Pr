@@ -1,15 +1,12 @@
 package pageObject;
 
-import core.Actions;
-import core.Checkers;
-import core.Urls;
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 
-public class AutomationPracticeFormPage extends Actions {
+public class AutomationPracticeFormPage extends Checkers {
 
     @FindBy(xpath = "//input[@placeholder='First Name']")
     private WebElement firstNameField;
@@ -23,16 +20,41 @@ public class AutomationPracticeFormPage extends Actions {
     private WebElement femaleRadioButton;
     @FindBy(xpath = "//input[@name='gender' and @value='Other']/..")
     private WebElement otherRadioButton;
+    @FindBy(id = "userNumber")
+    private WebElement mobileNumberField;
+    @FindBy(xpath = "//*[text()='Sports']/..")
+    private WebElement sportsCheckbox;
 
     public AutomationPracticeFormPage(WebDriver webDriver) {
         super(webDriver);
     }
+
+    @Override
+    protected String getRelativeUrl() {
+        return "automation-practice-form";
+    }
+
+    @Step
+    public AutomationPracticeFormPage checkUrl() {
+        assertUrl("URL соответствует: " + getRelativeUrl());
+        return new AutomationPracticeFormPage(webDriver);
+    }
+
 
     /**
      * CLICKS
      */
     public AutomationPracticeFormPage clickMaleRadioButton() {
         waitAndClick("Нажать на радиобаттон 'Male'", maleRadioButton);
+        return new AutomationPracticeFormPage(webDriver);
+    }
+
+    public AutomationPracticeFormPage clickSportsCheckbox() {
+        if (!sportsCheckbox.isSelected()) {
+            waitAndClick("Нажать на чекбокс 'Sports'", sportsCheckbox);
+        }else {
+            logger.info("Чекбокс 'Sports' был выбран");
+        }
         return new AutomationPracticeFormPage(webDriver);
     }
 
@@ -57,9 +79,14 @@ public class AutomationPracticeFormPage extends Actions {
         return new AutomationPracticeFormPage(webDriver);
     }
 
-
-
+    @Step
+    public AutomationPracticeFormPage enterTextInMobileNumberField(String number) {
+        enterText("Ввести значение в поле 'Mobile Number'", mobileNumberField, number);
+        return new AutomationPracticeFormPage(webDriver);
     }
+
+
+}
 
 
 

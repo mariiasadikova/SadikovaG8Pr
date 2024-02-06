@@ -1883,3 +1883,562 @@ Session ID: 3b1bb94246dfa3f893030e0261650bd0
 2024-06-02 00:37:08   INFO [AutomationPracticeFormTests] : Browser was closed
 2024-06-02 00:38:42   INFO [AutomationPracticeFormTests] : --------test001 was started-----------
 2024-06-02 00:38:45   INFO [AutomationPracticeFormTests] : Browser was opened
+2024-06-02 01:01:01   INFO [AutomationPracticeFormTests] : --------test001 was started-----------
+2024-06-02 01:01:05   INFO [AutomationPracticeFormTests] : Browser was opened
+2024-06-02 01:01:22   INFO [pageObject.HomePage] : Шаг 'Нажать на карточку 'Forms'' выполнен: клик по элементу  прошел успешно.
+2024-06-02 01:01:22   INFO [pageObject.LeftForm] : Шаг 'Нажать на кнопку 'Practice Form'' выполнен: клик по элементу  прошел успешно.
+2024-06-02 01:01:23   INFO [pageObject.AutomationPracticeFormPage] : Tommy was inputted into inputFirst Name
+2024-06-02 01:01:23   INFO [pageObject.AutomationPracticeFormPage] : Johnson was inputted into inputLast Name
+2024-06-02 01:01:23   INFO [pageObject.AutomationPracticeFormPage] : automation55cc3270537d4be58cd961bbfaf22a7c@gmail.com was inputted into inputname@example.com
+2024-06-02 01:01:24   INFO [pageObject.AutomationPracticeFormPage] : Шаг 'Нажать на радиобаттон 'Male'' выполнен: клик по элементу  прошел успешно.
+2024-06-02 01:01:24   INFO [core.Checkers] : Current Url https://demoqa.com/automation-practice-form
+2024-06-02 01:01:24   INFO [core.Checkers] : Url is correct
+2024-06-02 01:01:24   INFO [AutomationPracticeFormTests] : Browser was closed
+2024-06-02 01:01:24   INFO [AutomationPracticeFormTests] : ----------test001 was ended
+2024-06-02 01:20:22   INFO [AutomationPracticeFormTests] : --------test001 was started-----------
+2024-06-02 01:20:27   INFO [AutomationPracticeFormTests] : Browser was opened
+2024-06-02 01:20:39   INFO [pageObject.HomePage] : Элемент не кликабельный Error: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //*[text()='Forms']/ancestor::div[contains(@class,'top-card')]' (tried for 10 second(s) with 500 milliseconds interval)
+2024-06-02 01:20:39  ERROR [pageObject.HomePage] : Ошибка при клике по элементу : no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.140)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f8505ffa127f15fa0d9010163780e0ac, findElement {using=xpath, value=//*[text()='Forms']/ancestor::div[contains(@class,'top-card')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\Honor\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51897}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51897/devtoo..., se:cdpVersion: 121.0.6167.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f8505ffa127f15fa0d9010163780e0ac
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.140)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f8505ffa127f15fa0d9010163780e0ac, findElement {using=xpath, value=//*[text()='Forms']/ancestor::div[contains(@class,'top-card')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\Honor\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51897}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51897/devtoo..., se:cdpVersion: 121.0.6167.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f8505ffa127f15fa0d9010163780e0ac
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+	at core.Actions.waitAndClick(Actions.java:57)
+	at pageObject.HomePage.clickFormsCard(HomePage.java:25)
+	at AutomationPracticeFormTests.test001(AutomationPracticeFormTests.java:12)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+2024-06-02 01:20:50   INFO [pageObject.LeftForm] : Элемент не кликабельный Error: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.140)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f8505ffa127f15fa0d9010163780e0ac, findElement {using=xpath, value=//span[text()='Practice Form']/ancestor::li}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\Honor\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51897}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51897/devtoo..., se:cdpVersion: 121.0.6167.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f8505ffa127f15fa0d9010163780e0ac
+2024-06-02 01:20:50  ERROR [pageObject.LeftForm] : Ошибка при клике по элементу : no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.140)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f8505ffa127f15fa0d9010163780e0ac, findElement {using=xpath, value=//span[text()='Practice Form']/ancestor::li}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\Honor\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51897}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51897/devtoo..., se:cdpVersion: 121.0.6167.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f8505ffa127f15fa0d9010163780e0ac
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.140)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f8505ffa127f15fa0d9010163780e0ac, findElement {using=xpath, value=//span[text()='Practice Form']/ancestor::li}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\Honor\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51897}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51897/devtoo..., se:cdpVersion: 121.0.6167.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f8505ffa127f15fa0d9010163780e0ac
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+	at core.Actions.waitAndClick(Actions.java:57)
+	at pageObject.LeftForm.clickPracticeFormButton(LeftForm.java:24)
+	at AutomationPracticeFormTests.test001(AutomationPracticeFormTests.java:13)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+2024-06-02 01:22:12   INFO [AutomationPracticeFormTests] : --------test001 was started-----------
+2024-06-02 01:22:15   INFO [AutomationPracticeFormTests] : Browser was opened
+2024-06-02 01:22:28   INFO [pageObject.HomePage] : Элемент не кликабельный Error: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //*[text()='Forms']/ancestor::div[contains(@class,'top-card')]' (tried for 10 second(s) with 500 milliseconds interval)
+2024-06-02 01:22:28  ERROR [pageObject.HomePage] : Ошибка при клике по элементу : no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.140)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ce9f3cfd14806db2be99dec9a17e0645, findElement {using=xpath, value=//*[text()='Forms']/ancestor::div[contains(@class,'top-card')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\Honor\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51957}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51957/devtoo..., se:cdpVersion: 121.0.6167.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ce9f3cfd14806db2be99dec9a17e0645
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.140)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ce9f3cfd14806db2be99dec9a17e0645, findElement {using=xpath, value=//*[text()='Forms']/ancestor::div[contains(@class,'top-card')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\Honor\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51957}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51957/devtoo..., se:cdpVersion: 121.0.6167.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ce9f3cfd14806db2be99dec9a17e0645
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+	at core.Actions.waitAndClick(Actions.java:57)
+	at pageObject.HomePage.clickFormsCard(HomePage.java:25)
+	at AutomationPracticeFormTests.test001(AutomationPracticeFormTests.java:12)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+2024-06-02 01:22:38   INFO [pageObject.LeftForm] : Элемент не кликабельный Error: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.140)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ce9f3cfd14806db2be99dec9a17e0645, findElement {using=xpath, value=//span[text()='Practice Form']/ancestor::li}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\Honor\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51957}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51957/devtoo..., se:cdpVersion: 121.0.6167.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ce9f3cfd14806db2be99dec9a17e0645
+2024-06-02 01:22:38  ERROR [pageObject.LeftForm] : Ошибка при клике по элементу : no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.140)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ce9f3cfd14806db2be99dec9a17e0645, findElement {using=xpath, value=//span[text()='Practice Form']/ancestor::li}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\Honor\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51957}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51957/devtoo..., se:cdpVersion: 121.0.6167.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ce9f3cfd14806db2be99dec9a17e0645
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.140)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ce9f3cfd14806db2be99dec9a17e0645, findElement {using=xpath, value=//span[text()='Practice Form']/ancestor::li}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\Honor\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51957}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51957/devtoo..., se:cdpVersion: 121.0.6167.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ce9f3cfd14806db2be99dec9a17e0645
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+	at core.Actions.waitAndClick(Actions.java:57)
+	at pageObject.LeftForm.clickPracticeFormButton(LeftForm.java:24)
+	at AutomationPracticeFormTests.test001(AutomationPracticeFormTests.java:13)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+2024-06-02 01:24:17   INFO [AutomationPracticeFormTests] : --------test001 was started-----------
+2024-06-02 01:24:35   INFO [AutomationPracticeFormTests] : --------test001 was started-----------
+2024-06-02 01:24:38   INFO [AutomationPracticeFormTests] : Browser was opened
+2024-06-02 01:24:39  ERROR [pageObject.HomePage] : Can not open page: /
+2024-06-02 01:24:39   INFO [AutomationPracticeFormTests] : Browser was closed
+2024-06-02 01:24:39   INFO [AutomationPracticeFormTests] : ----------test001 was ended
+2024-06-02 01:25:28   INFO [AutomationPracticeFormTests] : --------test001 was started-----------
+2024-06-02 01:25:32   INFO [AutomationPracticeFormTests] : Browser was opened
+2024-06-02 01:25:45   INFO [pageObject.HomePage] : Page was opened: https://demoqa.com
+2024-06-02 01:25:50   INFO [pageObject.HomePage] : Шаг 'Нажать на карточку 'Forms'' выполнен: клик по элементу  прошел успешно.
+2024-06-02 01:25:50   INFO [pageObject.LeftForm] : Шаг 'Нажать на кнопку 'Practice Form'' выполнен: клик по элементу  прошел успешно.
+2024-06-02 01:25:51   INFO [pageObject.AutomationPracticeFormPage] : Tommy was inputted into inputFirst Name
+2024-06-02 01:25:51   INFO [pageObject.AutomationPracticeFormPage] : Johnson was inputted into inputLast Name
+2024-06-02 01:25:52   INFO [pageObject.AutomationPracticeFormPage] : automation22f05980e7454c2fac133d6711485b24@gmail.com was inputted into inputname@example.com
+2024-06-02 01:25:52   INFO [pageObject.AutomationPracticeFormPage] : Шаг 'Нажать на радиобаттон 'Male'' выполнен: клик по элементу  прошел успешно.
+2024-06-02 01:25:52   INFO [AutomationPracticeFormTests] : Browser was closed
+2024-06-02 01:25:52   INFO [AutomationPracticeFormTests] : ----------test001 was ended
+2024-06-02 01:27:06   INFO [AutomationPracticeFormTests] : --------test001 was started-----------
+2024-06-02 01:27:10   INFO [AutomationPracticeFormTests] : Browser was opened
+2024-06-02 01:27:16   INFO [pageObject.HomePage] : Page was opened: https://demoqa.com/
+2024-06-02 01:27:21   INFO [pageObject.HomePage] : Шаг 'Нажать на карточку 'Forms'' выполнен: клик по элементу  прошел успешно.
+2024-06-02 01:27:22   INFO [pageObject.LeftForm] : Шаг 'Нажать на кнопку 'Practice Form'' выполнен: клик по элементу  прошел успешно.
+2024-06-02 01:27:22   INFO [pageObject.AutomationPracticeFormPage] : Tommy was inputted into inputFirst Name
+2024-06-02 01:27:22   INFO [pageObject.AutomationPracticeFormPage] : Johnson was inputted into inputLast Name
+2024-06-02 01:27:23   INFO [pageObject.AutomationPracticeFormPage] : automation014eb7f4febb47c3abd5d123c12bc9da@gmail.com was inputted into inputname@example.com
+2024-06-02 01:27:23   INFO [pageObject.AutomationPracticeFormPage] : Шаг 'Нажать на радиобаттон 'Male'' выполнен: клик по элементу  прошел успешно.
+2024-06-02 01:27:24   INFO [AutomationPracticeFormTests] : Browser was closed
+2024-06-02 01:27:24   INFO [AutomationPracticeFormTests] : ----------test001 was ended
+2024-06-02 01:28:10   INFO [AutomationPracticeFormTests] : --------test001 was started-----------
+2024-06-02 01:28:14   INFO [AutomationPracticeFormTests] : Browser was opened
+2024-06-02 01:28:17   INFO [pageObject.HomePage] : Page was opened: https://demoqa.com/
+2024-06-02 01:28:34   INFO [pageObject.HomePage] : Шаг 'Нажать на карточку 'Forms'' выполнен: клик по элементу  прошел успешно.
+2024-06-02 01:28:35   INFO [pageObject.LeftForm] : Шаг 'Нажать на кнопку 'Practice Form'' выполнен: клик по элементу  прошел успешно.
+2024-06-02 01:28:35   INFO [pageObject.AutomationPracticeFormPage] : Tommy was inputted into inputFirst Name
+2024-06-02 01:28:36   INFO [pageObject.AutomationPracticeFormPage] : Johnson was inputted into inputLast Name
+2024-06-02 01:28:36   INFO [pageObject.AutomationPracticeFormPage] : automation7c021a95cb1f49a0a7292692c1b71155@gmail.com was inputted into inputname@example.com
+2024-06-02 01:28:36   INFO [pageObject.AutomationPracticeFormPage] : Шаг 'Нажать на радиобаттон 'Male'' выполнен: клик по элементу  прошел успешно.
+2024-06-02 01:28:36   INFO [pageObject.AutomationPracticeFormPage] : Url is correct
+2024-06-02 01:28:37   INFO [AutomationPracticeFormTests] : Browser was closed
+2024-06-02 01:28:37   INFO [AutomationPracticeFormTests] : ----------test001 was ended
+2024-06-02 01:39:55   INFO [AutomationPracticeFormTests] : --------test001 was started-----------
+2024-06-02 01:39:59   INFO [AutomationPracticeFormTests] : Browser was opened
+2024-06-02 01:40:12   INFO [pageObject.HomePage] : Page was opened: https://demoqa.com/
+2024-06-02 01:40:17   INFO [pageObject.HomePage] : Шаг 'Нажать на карточку 'Forms'' выполнен: клик по элементу  прошел успешно.
+2024-06-02 01:40:18   INFO [pageObject.LeftForm] : Шаг 'Нажать на кнопку 'Practice Form'' выполнен: клик по элементу  прошел успешно.
+2024-06-02 01:40:18   INFO [pageObject.AutomationPracticeFormPage] : Url is correct
+2024-06-02 01:40:18   INFO [pageObject.AutomationPracticeFormPage] : Tommy was inputted into inputFirst Name
+2024-06-02 01:40:18   INFO [pageObject.AutomationPracticeFormPage] : Johnson was inputted into inputLast Name
+2024-06-02 01:40:19   INFO [pageObject.AutomationPracticeFormPage] : automation7f64b3d41c4d4482b82ad49530d40682@gmail.com was inputted into inputname@example.com
+2024-06-02 01:40:19   INFO [pageObject.AutomationPracticeFormPage] : Шаг 'Нажать на радиобаттон 'Male'' выполнен: клик по элементу  прошел успешно.
+2024-06-02 01:40:19   INFO [pageObject.AutomationPracticeFormPage] : 4380665455 was inputted into inputMobile Number
+2024-06-02 01:40:19  ERROR [pageObject.AutomationPracticeFormPage] : Can not work with element
+2024-06-02 01:40:20   INFO [AutomationPracticeFormTests] : Browser was closed
+2024-06-02 01:40:20   INFO [AutomationPracticeFormTests] : ----------test001 was ended
+2024-06-02 01:41:44   INFO [AutomationPracticeFormTests] : --------test001 was started-----------
+2024-06-02 01:41:48   INFO [AutomationPracticeFormTests] : Browser was opened
+2024-06-02 01:42:00   INFO [pageObject.HomePage] : Page was opened: https://demoqa.com/
+2024-06-02 01:42:06   INFO [pageObject.HomePage] : Шаг 'Нажать на карточку 'Forms'' выполнен: клик по элементу  прошел успешно.
+2024-06-02 01:42:06   INFO [pageObject.LeftForm] : Шаг 'Нажать на кнопку 'Practice Form'' выполнен: клик по элементу  прошел успешно.
+2024-06-02 01:42:06   INFO [pageObject.AutomationPracticeFormPage] : Url is correct
+2024-06-02 01:42:07   INFO [pageObject.AutomationPracticeFormPage] : Tommy was inputted into inputFirst Name
+2024-06-02 01:42:07   INFO [pageObject.AutomationPracticeFormPage] : Johnson was inputted into inputLast Name
+2024-06-02 01:42:07   INFO [pageObject.AutomationPracticeFormPage] : automation4315b0950aea432b976267e50af5ef1e@gmail.com was inputted into inputname@example.com
+2024-06-02 01:42:08   INFO [pageObject.AutomationPracticeFormPage] : Шаг 'Нажать на радиобаттон 'Male'' выполнен: клик по элементу  прошел успешно.
+2024-06-02 01:42:08   INFO [pageObject.AutomationPracticeFormPage] : 4380665455 was inputted into inputMobile Number
+2024-06-02 01:42:08  ERROR [pageObject.AutomationPracticeFormPage] : Can not work with element
+2024-06-02 01:42:09   INFO [AutomationPracticeFormTests] : Browser was closed
+2024-06-02 01:42:09   INFO [AutomationPracticeFormTests] : ----------test001 was ended
+2024-06-02 01:42:40   INFO [AutomationPracticeFormTests] : --------test001 was started-----------
+2024-06-02 01:42:44   INFO [AutomationPracticeFormTests] : Browser was opened
+2024-06-02 01:42:58   INFO [pageObject.HomePage] : Page was opened: https://demoqa.com/
+2024-06-02 01:43:04   INFO [pageObject.HomePage] : Шаг 'Нажать на карточку 'Forms'' выполнен: клик по элементу  прошел успешно.
+2024-06-02 01:43:04   INFO [pageObject.LeftForm] : Шаг 'Нажать на кнопку 'Practice Form'' выполнен: клик по элементу  прошел успешно.
+2024-06-02 01:43:04   INFO [pageObject.AutomationPracticeFormPage] : Url is correct
+2024-06-02 01:43:04  ERROR [pageObject.AutomationPracticeFormPage] : Can not work with element
+2024-06-02 01:43:05   INFO [AutomationPracticeFormTests] : Browser was closed
+2024-06-02 01:43:05   INFO [AutomationPracticeFormTests] : ----------test001 was ended
+2024-06-02 01:43:51   INFO [AutomationPracticeFormTests] : --------test001 was started-----------
+2024-06-02 01:43:55   INFO [AutomationPracticeFormTests] : Browser was opened
+2024-06-02 01:44:07   INFO [pageObject.HomePage] : Page was opened: https://demoqa.com/
+2024-06-02 01:44:13   INFO [pageObject.HomePage] : Шаг 'Нажать на карточку 'Forms'' выполнен: клик по элементу  прошел успешно.
+2024-06-02 01:44:13   INFO [pageObject.LeftForm] : Шаг 'Нажать на кнопку 'Practice Form'' выполнен: клик по элементу  прошел успешно.
+2024-06-02 01:44:13   INFO [pageObject.AutomationPracticeFormPage] : Url is correct
+2024-06-02 01:44:24   INFO [AutomationPracticeFormTests] : Browser was closed
+2024-06-02 01:44:24   INFO [AutomationPracticeFormTests] : ----------test001 was ended
+2024-06-02 01:44:41   INFO [AutomationPracticeFormTests] : --------test001 was started-----------
+2024-06-02 01:44:45   INFO [AutomationPracticeFormTests] : Browser was opened
+2024-06-02 01:44:55   INFO [pageObject.HomePage] : Page was opened: https://demoqa.com/
+2024-06-02 01:45:01   INFO [pageObject.HomePage] : Шаг 'Нажать на карточку 'Forms'' выполнен: клик по элементу  прошел успешно.
+2024-06-02 01:45:01   INFO [pageObject.LeftForm] : Шаг 'Нажать на кнопку 'Practice Form'' выполнен: клик по элементу  прошел успешно.
+2024-06-02 01:45:01   INFO [pageObject.AutomationPracticeFormPage] : Url is correct
+2024-06-02 01:45:12   INFO [AutomationPracticeFormTests] : Browser was closed
+2024-06-02 01:45:12   INFO [AutomationPracticeFormTests] : ----------test001 was ended
+2024-06-02 01:51:10   INFO [AutomationPracticeFormTests] : --------test001 was started-----------
+2024-06-02 01:51:15   INFO [AutomationPracticeFormTests] : Browser was opened
+2024-06-02 01:51:22   INFO [pageObject.HomePage] : Page was opened: https://demoqa.com/
+2024-06-02 01:51:27   INFO [pageObject.HomePage] : Шаг 'Нажать на карточку 'Forms'' выполнен: клик по элементу  прошел успешно.
+2024-06-02 01:51:27   INFO [pageObject.LeftForm] : Шаг 'Нажать на кнопку 'Practice Form'' выполнен: клик по элементу  прошел успешно.
+2024-06-02 01:51:27   INFO [pageObject.AutomationPracticeFormPage] : Url is correct
+2024-06-02 01:51:28   INFO [pageObject.AutomationPracticeFormPage] : Чекбокс 'Sports' был выбран
+2024-06-02 01:51:28   INFO [AutomationPracticeFormTests] : Browser was closed
+2024-06-02 01:51:28   INFO [AutomationPracticeFormTests] : ----------test001 was ended
+2024-06-02 01:53:10   INFO [AutomationPracticeFormTests] : --------test001 was started-----------
+2024-06-02 01:53:14   INFO [AutomationPracticeFormTests] : Browser was opened
+2024-06-02 01:53:23   INFO [pageObject.HomePage] : Page was opened: https://demoqa.com/
+2024-06-02 01:53:29   INFO [pageObject.HomePage] : Шаг 'Нажать на карточку 'Forms'' выполнен: клик по элементу  прошел успешно.
+2024-06-02 01:53:29   INFO [pageObject.LeftForm] : Шаг 'Нажать на кнопку 'Practice Form'' выполнен: клик по элементу  прошел успешно.
+2024-06-02 01:53:29   INFO [pageObject.AutomationPracticeFormPage] : Url is correct
+2024-06-02 01:53:39   INFO [pageObject.AutomationPracticeFormPage] : Элемент не кликабельный SportsError: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (a06680e79488b3218187221090c6e33c)] -> xpath: //*[text()='Sports']/ancestor::div[contains(@class,'custom-checkbox')]/input] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\Honor\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60946}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60946/devtoo..., se:cdpVersion: 121.0.6167.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a06680e79488b3218187221090c6e33c
+2024-06-02 01:53:40  ERROR [pageObject.AutomationPracticeFormPage] : Ошибка при клике по элементу Sports: element click intercepted: Element <input type="checkbox" id="hobbies-checkbox-1" class="custom-control-input" value="1"> is not clickable at point (596, 455). Other element would receive the click: <label title="" for="hobbies-checkbox-1" class="custom-control-label">...</label>
+  (Session info: chrome=121.0.6167.140)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a06680e79488b3218187221090c6e33c, clickElement {id=5D0B6BCEE655C3E80A5205D7BEB0D91A_element_45}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\Honor\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60946}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60946/devtoo..., se:cdpVersion: 121.0.6167.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (a06680e79488b3218187221090c6e33c)] -> xpath: //*[text()='Sports']/ancestor::div[contains(@class,'custom-checkbox')]/input]
+Session ID: a06680e79488b3218187221090c6e33c
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input type="checkbox" id="hobbies-checkbox-1" class="custom-control-input" value="1"> is not clickable at point (596, 455). Other element would receive the click: <label title="" for="hobbies-checkbox-1" class="custom-control-label">...</label>
+  (Session info: chrome=121.0.6167.140)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a06680e79488b3218187221090c6e33c, clickElement {id=5D0B6BCEE655C3E80A5205D7BEB0D91A_element_45}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\Honor\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60946}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60946/devtoo..., se:cdpVersion: 121.0.6167.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (a06680e79488b3218187221090c6e33c)] -> xpath: //*[text()='Sports']/ancestor::div[contains(@class,'custom-checkbox')]/input]
+Session ID: a06680e79488b3218187221090c6e33c
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+	at core.Actions.waitAndClick(Actions.java:57)
+	at pageObject.AutomationPracticeFormPage.clickSportsCheckbox(AutomationPracticeFormPage.java:56)
+	at AutomationPracticeFormTests.test001(AutomationPracticeFormTests.java:20)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+2024-06-02 01:53:41   INFO [AutomationPracticeFormTests] : Browser was closed
+2024-06-02 01:53:41   INFO [AutomationPracticeFormTests] : ----------test001 was ended
+2024-06-02 01:54:18   INFO [AutomationPracticeFormTests] : --------test001 was started-----------
+2024-06-02 01:54:22   INFO [AutomationPracticeFormTests] : Browser was opened
+2024-06-02 01:54:31   INFO [pageObject.HomePage] : Page was opened: https://demoqa.com/
+2024-06-02 01:54:36   INFO [pageObject.HomePage] : Шаг 'Нажать на карточку 'Forms'' выполнен: клик по элементу  прошел успешно.
+2024-06-02 01:54:37   INFO [pageObject.LeftForm] : Шаг 'Нажать на кнопку 'Practice Form'' выполнен: клик по элементу  прошел успешно.
+2024-06-02 01:54:37   INFO [pageObject.AutomationPracticeFormPage] : Url is correct
+2024-06-02 01:54:38  ERROR [pageObject.AutomationPracticeFormPage] : Ошибка при клике по элементу : element click intercepted: Element <div class="custom-control custom-checkbox custom-control-inline">...</div> is not clickable at point (623, 632). Other element would receive the click: <iframe frameborder="0" src="https://cd65e9b858ac1671fe2f464322fd1177.safeframe.googlesyndication.com/safeframe/1-0-40/html/container.html" id="google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="728" height="90" data-is-safeframe="true" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" aria-label="Advertisement" tabindex="0" data-google-container-id="1" style="border: 0px; vertical-align: bottom;" data-load-complete="true"></iframe>
+  (Session info: chrome=121.0.6167.140)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9e2d1599556825f14a70f322fb949109, clickElement {id=F3D376CBFFFBC2E9EAF2F3028B3CA596_element_60}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\Honor\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59662}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59662/devtoo..., se:cdpVersion: 121.0.6167.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (9e2d1599556825f14a70f322fb949109)] -> xpath: //*[text()='Sports']/ancestor::div[contains(@class,'custom-checkbox')]]
+Session ID: 9e2d1599556825f14a70f322fb949109
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="custom-control custom-checkbox custom-control-inline">...</div> is not clickable at point (623, 632). Other element would receive the click: <iframe frameborder="0" src="https://cd65e9b858ac1671fe2f464322fd1177.safeframe.googlesyndication.com/safeframe/1-0-40/html/container.html" id="google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="728" height="90" data-is-safeframe="true" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" aria-label="Advertisement" tabindex="0" data-google-container-id="1" style="border: 0px; vertical-align: bottom;" data-load-complete="true"></iframe>
+  (Session info: chrome=121.0.6167.140)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9e2d1599556825f14a70f322fb949109, clickElement {id=F3D376CBFFFBC2E9EAF2F3028B3CA596_element_60}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\Honor\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59662}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59662/devtoo..., se:cdpVersion: 121.0.6167.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (9e2d1599556825f14a70f322fb949109)] -> xpath: //*[text()='Sports']/ancestor::div[contains(@class,'custom-checkbox')]]
+Session ID: 9e2d1599556825f14a70f322fb949109
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+	at core.Actions.waitAndClick(Actions.java:57)
+	at pageObject.AutomationPracticeFormPage.clickSportsCheckbox(AutomationPracticeFormPage.java:56)
+	at AutomationPracticeFormTests.test001(AutomationPracticeFormTests.java:20)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+2024-06-02 01:54:39   INFO [AutomationPracticeFormTests] : Browser was closed
+2024-06-02 01:54:39   INFO [AutomationPracticeFormTests] : ----------test001 was ended
+2024-06-02 01:55:51   INFO [AutomationPracticeFormTests] : --------test001 was started-----------
+2024-06-02 01:55:55   INFO [AutomationPracticeFormTests] : Browser was opened
+2024-06-02 01:56:00   INFO [pageObject.HomePage] : Page was opened: https://demoqa.com/
+2024-06-02 01:56:06   INFO [pageObject.HomePage] : Шаг 'Нажать на карточку 'Forms'' выполнен: клик по элементу  прошел успешно.
+2024-06-02 01:56:06   INFO [pageObject.LeftForm] : Шаг 'Нажать на кнопку 'Practice Form'' выполнен: клик по элементу  прошел успешно.
+2024-06-02 01:56:06   INFO [pageObject.AutomationPracticeFormPage] : Url is correct
+2024-06-02 01:56:07   INFO [AutomationPracticeFormTests] : Browser was closed
+2024-06-02 01:56:07   INFO [AutomationPracticeFormTests] : ----------test001 was ended
+2024-06-02 01:57:05   INFO [AutomationPracticeFormTests] : --------test001 was started-----------
+2024-06-02 01:57:09   INFO [AutomationPracticeFormTests] : Browser was opened
+2024-06-02 01:57:14   INFO [pageObject.HomePage] : Page was opened: https://demoqa.com/
+2024-06-02 01:57:20   INFO [pageObject.HomePage] : Шаг 'Нажать на карточку 'Forms'' выполнен: клик по элементу  прошел успешно.
+2024-06-02 01:57:20   INFO [pageObject.LeftForm] : Шаг 'Нажать на кнопку 'Practice Form'' выполнен: клик по элементу  прошел успешно.
+2024-06-02 01:57:20   INFO [pageObject.AutomationPracticeFormPage] : Url is correct
+2024-06-02 01:57:20   INFO [pageObject.AutomationPracticeFormPage] : Шаг 'Нажать на чекбокс 'Sports'' выполнен: клик по элементу  прошел успешно.
+2024-06-02 01:57:21   INFO [AutomationPracticeFormTests] : Browser was closed
+2024-06-02 01:57:21   INFO [AutomationPracticeFormTests] : ----------test001 was ended

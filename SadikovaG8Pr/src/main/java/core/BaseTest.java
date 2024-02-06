@@ -74,7 +74,6 @@ public class BaseTest extends PageProvider {
         webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5)); // wait 5 seconds
         logger.info("Browser was opened");
         init(webDriver);
-        webDriver.get(Urls.baseUrl);
 
     }
 

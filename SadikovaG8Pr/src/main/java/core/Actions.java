@@ -4,12 +4,21 @@ import io.qameta.allure.Step;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import javax.sound.midi.Patch;
+import java.io.File;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.time.Duration;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Actions {
 
@@ -41,28 +50,9 @@ public class Actions {
         }
     }
 
-    public void waitClickability(WebElement element) {
-        try {
-            webDriverWait10.until(ExpectedConditions.elementToBeClickable(element));
-        } catch (Exception e) {
-            logger.info("Элемент не кликабельный " + getElementName(element) + "Error: " + e.getMessage());
-        }
-    }
 
     @Step
-    public void waitAndClick(String step, WebElement element) {
-        try {
-            waitClickability(element);
-
-            element.click();
-            logger.info("Шаг '" + step + "' выполнен: клик по элементу " + getElementName(element) + " прошел успешно.");
-        } catch (Exception e) {
-            logger.error("Ошибка при клике по элементу " + getElementName(element) + ": " + e.getMessage(), e);
-        }
-    }
-
-    @Step
-    protected void enterText(String step, WebElement element, String text) {
+    protected void enterText(WebElement element, String text) {
         webDriverWait10.until(ExpectedConditions.elementToBeClickable(element));
         try {
             element.clear();
@@ -73,7 +63,8 @@ public class Actions {
         }
     }
 
-    public void goToWebPage(String step, String url) {
+    @Step
+    public void goToWebPage(String url) {
         try {
             webDriver.get(url);
             logger.info("Page was opened: " + url);
@@ -84,15 +75,99 @@ public class Actions {
     }
 
     @Step("{step}")
-    public void switchToFrame(String step, WebElement iframe) {
+    public void switchToFrame(WebElement iframe) {
         waitClickability(iframe);
         webDriver.switchTo().frame(iframe);
 
     }
 
 
-    //------------исправить
+    //--------------------------------upload---------------------------
+    public static String getAbsolutePath(String file) {
+        Path patch = Paths.get("").toAbsolutePath().resolve(file);
+        String absolutePath = patch.toString();
+        return absolutePath;
+    }
 
+    public void uploadImage(WebElement element, String path) {
+        String absolutePath = getAbsolutePath(path);
+        element.sendKeys(absolutePath);
+
+    }
+
+    //-------------------------elements-------------------------------
+    public void waitClickability(WebElement element) {
+        try {
+            webDriverWait10.until(ExpectedConditions.elementToBeClickable(element));
+        } catch (Exception e) {
+            logger.info("Элемент не кликабельный " + getElementName(element) + "Error: " + e.getMessage());
+        }
+    }
+
+
+    public void scrollToElement(WebElement element) {
+        ((JavascriptExecutor) webDriver).executeScript("arguments[0].scrollIntoView(true);", element);
+    }
+
+    @Step
+    public void waitAndClick(WebElement element) {
+        try {
+            waitClickability(element);
+
+            element.click();
+            logger.info("Шаг выполнен: клик по элементу " + getElementName(element) + " прошел успешно.");
+        } catch (Exception e) {
+            logger.error("Ошибка при клике по элементу " + getElementName(element) + ": " + e.getMessage(), e);
+        }
+    }
+
+    public static String getFileNameFromPath(String fullPath) {
+        String[] parts = fullPath.split("/");
+        return parts[parts.length - 1];
+    }
+
+    public static String rgbToHex(String rgb) {
+        String[] numbers = rgb.replace("rgba(", "").replace("rgb(", "").replace(")", "").split(",");
+        int r = Integer.parseInt(numbers[0].trim());
+        int g = Integer.parseInt(numbers[1].trim());
+        int b = Integer.parseInt(numbers[2].trim());
+
+        return String.format("#%02x%02x%02x", r, g, b);
+    }
+
+    public void deleteImage(String downloadPath) {
+        try {
+            Path path = Paths.get(downloadPath);
+            logger.info(downloadPath);
+            Files.deleteIfExists(path);
+            logger.info("Файл успешно удален");
+        } catch (Exception e) {
+            logger.info("Произошла ошибка при удалении файла: " + e.getMessage());
+        }
+    }
+
+
+    public WebDriver configureDriverWithDownloadPath() {
+        String tempDirectory = System.getProperty("java.io.tmpdir");
+        String downloadPath = tempDirectory + File.separator + "myDownloads";
+
+        File downloadDir = new File(downloadPath);
+        if (!downloadDir.exists()) {
+            boolean wasCreated = downloadDir.mkdir();
+            if (!wasCreated) {
+                throw new RuntimeException("Не удалось создать директорию для загрузок: " + downloadPath);
+            }
+        }
+
+        ChromeOptions options = new ChromeOptions();
+        Map<String, Object> prefs = new HashMap<>();
+        prefs.put("download.default_directory", downloadPath);
+        options.setExperimentalOption("prefs", prefs);
+
+        return new ChromeDriver(options);
+    }
+
+    //------------исправить
 
 
     public void switchTab(int tab) {

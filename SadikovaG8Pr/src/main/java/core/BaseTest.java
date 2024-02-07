@@ -18,6 +18,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
 import java.io.ByteArrayInputStream;
+import java.io.File;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -28,20 +29,21 @@ public class BaseTest extends PageProvider {
     protected WebDriver webDriver;
     protected Logger logger = Logger.getLogger(getClass());
 
-
     @Attachment(value = "Page screenshot", type = "image/png")
     public static byte[] saveScreenshotPNG(WebDriver driver) {
         return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
     }
 
-        private void driverInit() {
+    private void driverInit() {
+        WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
-        Map<String, Object> prefs = new HashMap<String, Object>();
+        Map<String, Object> prefs = new HashMap<>();
         prefs.put("profile.default_content_setting_values.notifications", 1); // Разрешить уведомления
         prefs.put("profile.default_content_setting_values.geolocation", 1); // Разрешить геолокацию
+        prefs.put("download.default_directory", new File("downloads").getAbsolutePath()); // Использование абсолютного пути
         options.setExperimentalOption("prefs", prefs);
         options.addArguments("--disable-popup-blocking");
-      //  options.addArguments("--headless");
+        options.addArguments("--window-size=1920,1080");
         webDriver = new ChromeDriver(options);
     }
 
@@ -65,22 +67,25 @@ public class BaseTest extends PageProvider {
         return webDriver;
     }
 
-    //Will be executed before each test
+
     @Before
     public void setUp() {
         logger.info("--------" + testName.getMethodName() + " was started-----------");
-        webDriver = initDriver();
+        // webDriver = initDriver();
+        driverInit();
         webDriver.manage().window().maximize(); // maximize window
-        webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5)); // wait 5 seconds
+        webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         logger.info("Browser was opened");
         init(webDriver);
+
+
 
     }
 
     @After
     public void tearDown() {
         saveScreenshotPNG(webDriver);
-        //  webDriver.quit();
+    //    webDriver.quit();
         logger.info("Browser was closed");
         logger.info("----------" + testName.getMethodName() + " was ended");
     }

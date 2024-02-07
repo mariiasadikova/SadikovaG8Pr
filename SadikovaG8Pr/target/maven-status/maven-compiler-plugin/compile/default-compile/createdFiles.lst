@@ -1,0 +1,8 @@
+testInfo\UserData.class
+core\PageProvider.class
+pageObject\AutomationPracticeFormPage.class
+core\Actions.class
+pageObject\LeftForm.class
+core\BaseTest.class
+pageObject\Checkers.class
+pageObject\HomePage.class

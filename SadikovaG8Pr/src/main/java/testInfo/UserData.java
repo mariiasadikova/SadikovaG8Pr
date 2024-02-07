@@ -6,7 +6,12 @@ import java.util.UUID;
 public class UserData {
     public static String USER_NAME = "Tommy",
             LAST_NAME = "Johnson",
-            MOBILE_NUMBER = "4380665455";
+            MOBILE_NUMBER = "4380665455",
+            PHOTO_OF_USER_PATH = "src/main/resources/musician-664432_640.jpg",
+            STATE = "Haryana",
+            CITY = "Karnal",
+    USER_LOGIN = "testqa1207",
+    PASSWORD = "P@ssw0rdabc";
 
 
     public static String randomEmail() {
@@ -37,4 +42,6 @@ public class UserData {
 
         return sb.toString();
     }
+
+
 }

@@ -1,9 +1,7 @@
 package core;
 
 import org.openqa.selenium.WebDriver;
-import pageObject.AutomationPracticeFormPage;
-import pageObject.HomePage;
-import pageObject.LeftForm;
+import pageObject.*;
 
 public class PageProvider {
     protected Actions actions;
@@ -12,6 +10,9 @@ public class PageProvider {
     protected pageObject.HomePage homePage;
     protected AutomationPracticeFormPage automationPracticeFormPage;
     protected pageObject.LeftForm leftForm;
+    protected pageObject.UploadDownloadPage uploadDownloadPage;
+    protected pageObject.LoginPage loginPage;
+    protected pageObject.ProfilePage profilePage;
 
 
     protected void init(WebDriver webDriver) {
@@ -19,6 +20,9 @@ public class PageProvider {
         homePage = new HomePage(webDriver);
         automationPracticeFormPage = new AutomationPracticeFormPage(webDriver);
         leftForm = new LeftForm(webDriver);
+        uploadDownloadPage = new UploadDownloadPage(webDriver);
+        loginPage = new LoginPage(webDriver);
+        profilePage = new ProfilePage(webDriver);
 
     }
 }

@@ -3,9 +3,7 @@ package pageObject;
 import core.Actions;
 import io.qameta.allure.Step;
 import org.junit.Assert;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
@@ -28,20 +26,6 @@ abstract public class Checkers extends Actions {
     protected void assertUrl() {
         Assert.assertEquals("Invalid url " + webDriver.getCurrentUrl(), baseUrl + getRelativeUrl(), webDriver.getCurrentUrl());
         logger.info("Url is correct");
-    }
-
-    @Step
-    protected void containsUrl() {
-        webDriverWait10.until(ExpectedConditions.urlContains(baseUrl + getRelativeUrl()));
-        logger.info("Url is correct");
-    }
-
-    @Step
-    protected void checkUrlWithPatternUrl() {
-        Assert.assertTrue("Invalid page \n"
-                        + "Expected result: " + baseUrl + getRelativeUrl() + "\n"
-                        + "Actual result: " + webDriver.getCurrentUrl()
-                , webDriver.getCurrentUrl().matches(baseUrl + getRelativeUrl()));
     }
 
     @Step
@@ -82,9 +66,6 @@ abstract public class Checkers extends Actions {
             }
             return found;
         }
-
-
-
 
         @Step
     protected void checkIsElementVisible(WebElement... elements) {

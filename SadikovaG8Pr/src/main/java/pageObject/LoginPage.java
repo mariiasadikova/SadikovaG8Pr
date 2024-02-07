@@ -63,5 +63,19 @@ public class LoginPage extends Checkers {
         return new LoginPage(webDriver);
     }
 
+    @Step("Отображена кнопка 'User Name'")
+    public LoginPage checkUserNameButtonIsVisible() {
+        checkIsElementVisible(userNameField);
+        return new LoginPage(webDriver);
+    }
+
+    @Step("Отображена кнопка 'Password'")
+    public LoginPage checkPasswordButtonIsVisible() {
+        checkIsElementVisible(passwordField);
+        return new LoginPage(webDriver);
+    }
+
+
+
 
 }

@@ -5,7 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import javax.security.auth.x500.X500Principal;
 
 public class ProfilePage extends Checkers {
 

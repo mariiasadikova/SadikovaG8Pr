@@ -12,7 +12,9 @@ public class LogoutTest extends BaseTest {
         profilePage.checkLogOutButtonIsVisible()
                 .checkTextsContainsInUserNameField(UserData.USER_LOGIN)
                 .clickLogOutButton();
-                loginPage.checkUrl();
+        loginPage.checkUrl()
+                .checkUserNameButtonIsVisible()
+                .checkPasswordButtonIsVisible();
 
 
     }

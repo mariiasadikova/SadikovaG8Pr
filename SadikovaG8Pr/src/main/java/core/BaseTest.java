@@ -1,15 +1,12 @@
 package core;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import io.qameta.allure.Allure;
 import io.qameta.allure.Attachment;
 import org.apache.log4j.Logger;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.rules.TestName;
-import org.junit.rules.TestWatcher;
-import org.junit.runner.Description;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -17,10 +14,8 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
-import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.time.Duration;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -85,7 +80,7 @@ public class BaseTest extends PageProvider {
     @After
     public void tearDown() {
         saveScreenshotPNG(webDriver);
-    //    webDriver.quit();
+        webDriver.quit();
         logger.info("Browser was closed");
         logger.info("----------" + testName.getMethodName() + " was ended");
     }

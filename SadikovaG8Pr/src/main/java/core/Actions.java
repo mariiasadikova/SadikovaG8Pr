@@ -4,26 +4,19 @@ import io.qameta.allure.Step;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import javax.sound.midi.Patch;
-import java.io.File;
+
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.Duration;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
 
 public class Actions {
 
     protected WebDriver webDriver;
-
     protected Logger logger = Logger.getLogger(getClass());
     protected WebDriverWait webDriverWait10, webDriverWait15, webDriverWait3;
 
@@ -73,14 +66,6 @@ public class Actions {
             Assert.fail("Can not open page");
         }
     }
-
-    @Step("{step}")
-    public void switchToFrame(WebElement iframe) {
-        waitClickability(iframe);
-        webDriver.switchTo().frame(iframe);
-
-    }
-
 
     //--------------------------------upload---------------------------
     public static String getAbsolutePath(String file) {
@@ -144,63 +129,5 @@ public class Actions {
         } catch (Exception e) {
             logger.info("Произошла ошибка при удалении файла: " + e.getMessage());
         }
-    }
-
-
-    public WebDriver configureDriverWithDownloadPath() {
-        String tempDirectory = System.getProperty("java.io.tmpdir");
-        String downloadPath = tempDirectory + File.separator + "myDownloads";
-
-        File downloadDir = new File(downloadPath);
-        if (!downloadDir.exists()) {
-            boolean wasCreated = downloadDir.mkdir();
-            if (!wasCreated) {
-                throw new RuntimeException("Не удалось создать директорию для загрузок: " + downloadPath);
-            }
-        }
-
-        ChromeOptions options = new ChromeOptions();
-        Map<String, Object> prefs = new HashMap<>();
-        prefs.put("download.default_directory", downloadPath);
-        options.setExperimentalOption("prefs", prefs);
-
-        return new ChromeDriver(options);
-    }
-
-    //------------исправить
-
-
-    public void switchTab(int tab) {
-        try {
-            ArrayList<String> tabs = new ArrayList<String>(webDriver.getWindowHandles());
-            webDriver.switchTo().window(tabs.get(tab));
-            logger.info("Tab is switch and opened: " + tab);
-        } catch (Exception e) {
-            webDriver.findElement(By.cssSelector("body")).sendKeys(Keys.CONTROL + "t");
-            logger.info("Was used hot keys " + tab);
-
-        }
-    }
-
-    public void openWindow() throws InterruptedException {
-        ((JavascriptExecutor) webDriver).executeScript("window.open();");
-        logger.info("New window is open");
-    }
-
-    public void closeTab(int tabNumber) {
-        try {
-            ArrayList<String> tabs = new ArrayList<String>(webDriver.getWindowHandles());
-            webDriver.switchTo().window(tabs.get(tabNumber));
-            webDriver.close();
-            logger.info("Page is closed");
-        } catch (Exception e) {
-            webDriver.findElement(By.cssSelector("body")).sendKeys(Keys.CONTROL + "t");
-            logger.info("Was used hot key. Page is closed");
-        }
-    }
-
-    public void refreshPage() {
-        webDriver.navigate().refresh();
-        logger.info("Page is refreshed");
     }
 }
